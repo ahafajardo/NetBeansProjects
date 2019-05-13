@@ -1,0 +1,3 @@
+Wood
+Number of Vowels: 2
+Number of Capital Letters: 1

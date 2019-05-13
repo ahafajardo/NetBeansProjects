@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Programming2Final.jnlp">
+    <information>
+        <title>Programming2Final</title>
+        <vendor>adfaj</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="Programming2Final.jar" size="4650" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="programming2final.Programming2Final" name="Programming2Final"/>
+</jnlp>
+

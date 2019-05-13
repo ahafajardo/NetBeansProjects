@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="netcapfx.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField layoutX="33.0" layoutY="25.0" />
+      <TextArea fx:id="message" layoutX="27.0" layoutY="86.0" prefHeight="588.0" prefWidth="753.0" />
+      <Button layoutX="816.0" layoutY="335.0" mnemonicParsing="false" onAction="#localConnect" text="Connect to Local" />
+      <Button layoutX="849.0" layoutY="413.0" mnemonicParsing="false" text="Button" />
+    </children>
+</AnchorPane>

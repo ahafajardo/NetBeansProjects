@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: black; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="600.0">
+         <image>
+            <Image url="@../images/playerBackground.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerName" layoutX="193.0" layoutY="14.0" text="Player 1">
+         <font>
+            <Font name="Kabel Book" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="88.0" text="Balance:">
+         <font>
+            <Font name="Kabel Book" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerBalance" layoutX="310.0" layoutY="88.0" text="\$">
+         <font>
+            <Font name="Kabel Book" size="36.0" />
+         </font>
+      </Label>
+      <HBox fx:id="playerProperties" layoutY="150.0" prefHeight="126.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

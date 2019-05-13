@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="386.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pizzamaker.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="314.0" layoutY="155.0" onAction="#handleButtonAction" text="Cook!" />
+        <Label fx:id="label" layoutX="232.0" layoutY="14.0" minHeight="16" minWidth="69" text="Dominos" />
+      <ImageView fitHeight="167.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Why.PNG" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="choiceBox" layoutX="230.0" layoutY="35.0" prefHeight="31.0" prefWidth="143.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="700.0" maxWidth="1023.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pex4.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/minimalMonopolyBoardSized.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="783.0" layoutY="626.0" mnemonicParsing="false" text="Roll Dice" />
+      <TableView fx:id="scoreTable" layoutX="722.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="playerCol" prefWidth="99.0" text="Player" />
+            <TableColumn fx:id="moneyCol" prefWidth="100.0" text="Money" />
+         </columns></TableView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="player1Icon" fitHeight="45.0" fitWidth="75.0" layoutX="605.0" layoutY="619.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/monopolySpritesCarFinal.png" />
+         </image></ImageView>
+      <ImageView fx:id="player2Icon" fitHeight="45.0" fitWidth="62.0" layoutX="612.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../res/monopolySpritesDogFinal.png" />
+         </image></ImageView>
+   </children>
+</Pane>

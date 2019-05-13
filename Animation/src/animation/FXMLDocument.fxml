@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="animation.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="806.0" fitWidth="918.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Why.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="questionMark" fitHeight="150.0" fitWidth="200.0" layoutX="730.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/question.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="rotateButton" layoutX="62.0" layoutY="533.0" mnemonicParsing="false" onAction="#rotateQuestion" text="Rotate" />
+      <Button fx:id="bounceButton" layoutX="61.0" layoutY="584.0" mnemonicParsing="false" onAction="#bounceQuestion" text="Bounce" />
+   </children>
+</Pane>

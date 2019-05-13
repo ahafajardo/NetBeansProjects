@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EnigmaUIFXMLController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TabPane prefHeight="541.0" prefWidth="915.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="Coding">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="plugBoardText" layoutX="639.0" layoutY="13.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="251.0" promptText="Enter plugboard settings" wrapText="true" />
+                        <TextArea fx:id="reflectorText" layoutX="640.0" layoutY="232.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="252.0" promptText="Enter reflector settings" wrapText="true" />
+                        <Button fx:id="codeButton" layoutX="14.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleCodeButtonAction" prefHeight="31.0" prefWidth="107.0" text="Code a File" />
+                        <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="182.0" text="Inner Wheel">
+                          <content>
+                            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="188.0">
+                                 <children>
+                                    <ChoiceBox fx:id="innerWheelChoiceBox" layoutX="15.0" layoutY="14.0" prefHeight="31.0" prefWidth="159.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" collapsible="false" layoutX="214.0" layoutY="13.0" prefHeight="214.0" prefWidth="132.0" text="Middle Wheel">
+                          <content>
+                            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="204.0">
+                                 <children>
+                                    <ChoiceBox fx:id="midWheelChoiceBox" layoutX="21.0" layoutY="14.0" prefHeight="31.0" prefWidth="159.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" collapsible="false" layoutX="428.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="201.0" text="Outer Wheel">
+                          <content>
+                            <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ChoiceBox fx:id="outerWheelChoiceBox" layoutX="21.0" layoutY="14.0" prefHeight="31.0" prefWidth="159.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
+                        <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="232.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="182.0" text="Inner Start">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="155.0" prefWidth="188.0">
+                                 <children>
+                                    <ChoiceBox fx:id="innerStartChoiceBox" layoutX="15.0" layoutY="14.0" prefHeight="31.0" prefWidth="159.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" collapsible="false" layoutX="428.0" layoutY="232.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="201.0" text="Outer Start">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ChoiceBox fx:id="outerStartChoiceBox" layoutX="21.0" layoutY="14.0" prefHeight="31.0" prefWidth="159.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" collapsible="false" layoutX="214.0" layoutY="231.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="204.0" text="Middle Start">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="225.0" prefWidth="200.0">
+                                 <children>
+                                    <ChoiceBox fx:id="midStartChoiceBox" layoutX="21.0" layoutY="14.0" prefHeight="31.0" prefWidth="159.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                        <Button fx:id="openButton" layoutX="143.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleOpenButtonAction" prefHeight="31.0" prefWidth="107.0" text="Open a File" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Results">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="inputText" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="435.0" prefWidth="415.0" promptText="File before encryption" />
+                        <TextArea fx:id="outputText" editable="false" layoutX="486.0" layoutY="14.0" prefHeight="435.0" prefWidth="415.0" promptText="File after encryption" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>
